@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            animation-name: backgroundColorPalette;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear; 
+
+        }
+
+        @keyframes backgroundColorPalette {
+            0% {
+                background: #ee6055;
+            }
+            25% {
+                background: #60d394;
+            }
+            50% {
+                background: #aaf683;
+            }
+            75% {
+                background: #ffd97d;
+            }
+            100% {
+                background: #ff9b85;
+            }
+        }
+        
+        #start{
+            height: 10vh;
+            width: 20vw;
+            border-radius: 500px;
+            font-family: 'Montserrat';
+            letter-spacing: 2px;
+            font-size: 3\40px;
+            background-image: linear-gradient( red, rgb(240, 72, 72));
+            border: none;
+            color: white;            
+        }
+
+        #start:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <a href="/langtons/index.html">
+            <button id="start">START</button>
+            
+        </a>
+    
+</body>
+</html>

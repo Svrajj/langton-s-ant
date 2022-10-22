@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/langtons/script.js" defer></script>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            animation-name: backgroundColorPalette;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear; 
+
+        }
+
+        @keyframes backgroundColorPalette {
+            0% {
+                background: #ee6055;
+            }
+            25% {
+                background: #60d394;
+            }
+            50% {
+                background: #aaf683;
+            }
+            75% {
+                background: #ffd97d;
+            }
+            100% {
+                background: #ff9b85;
+            }
+        }
+        
+        #moves {
+            font-family: 'Montserrat';
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="grid" width="500" height="500">
+
+    </canvas>
+    <span id="moves">
+
+    </span>
+    
+</body>
+</html>
